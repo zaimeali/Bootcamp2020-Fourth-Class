@@ -4,14 +4,14 @@ import ValueContext from './ValueContext';
 
 function Child(props) {
 
-    let value = useContext(ValueContext);
+    let weight = useContext(ValueContext);
   
     return (
         <div>
             <h3>Child</h3>
-            <p>Value in Number variable in Child Component: { props.num }</p>
+            <p>Value of Age variable in Child Component: { props.age }</p>
             <h4>Context Value</h4>
-            <p>Value in Value variable in Child Component: { value }</p>
+            <p>Value of Weight variable in Child Component: { weight }</p>
         </div>
     );
 }

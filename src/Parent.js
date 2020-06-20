@@ -6,7 +6,8 @@ function Parent(props) {
   return (
     <div>
         <h2>Parent</h2>
-        <Child num={ props.num }></Child>
+        <hr />
+        <Child age={ props.age }></Child>
     </div>
   );
 }
