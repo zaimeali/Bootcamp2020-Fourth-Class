@@ -5,7 +5,7 @@ import Child from './Child';
 function Parent(props) {
   return (
     <div>
-        <h2>Parent</h2>
+        <h4>Parent</h4>
         <hr />
         <Child age={ props.age }></Child>
     </div>

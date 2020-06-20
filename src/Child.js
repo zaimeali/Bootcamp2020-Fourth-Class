@@ -4,14 +4,15 @@ import ValueContext from './ValueContext';
 
 function Child(props) {
 
-    let value = useContext(ValueContext);
+    let salary = useContext(ValueContext);
   
     return (
         <div>
-            <h3>Child</h3>
-            <p>Value in Number variable in Child Component: { props.num }</p>
-            <h4>Context Value</h4>
-            <p>Value in Value variable in Child Component: { value }</p>
+            <strong>Child</strong>
+            <p>Value of Age variable in Child Component: { props.age }</p>
+            <strong>Context Value</strong>
+            <p>Value of Salary variable in Child Component: { salary[0] }</p>
+            <button onClick={ () => { salary[1](++salary[0]) } }>Update Salary</button>
         </div>
     );
 }
