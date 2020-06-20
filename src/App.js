@@ -20,7 +20,6 @@ function App() {
           <p>Value of Weight variable in App Component: { weight }</p>
           <p>Value of Salary variable in App Component: { salary }</p>
           <button onClick={() => { setAge(++age) }}>Update Age</button>
-          <hr />
           <Parent age={ age }></Parent>
         </header>
       </div>
